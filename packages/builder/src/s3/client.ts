@@ -31,6 +31,7 @@ export function createS3Client(config: S3Config): S3Client {
 
   const s3ClientConfig: S3ClientConfig = {
     region,
+    forcePathStyle: true,
     credentials: {
       accessKeyId,
       secretAccessKey,
